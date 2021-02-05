@@ -1,0 +1,67 @@
+body {
+  color: #333;
+  font-family: "Helvetica", "Lucida Grande", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 940px;
+}
+
+h1 {
+  background-color: #aaa;
+  padding: 10px;
+}
+
+h2 {
+  border-bottom: 2px solid #333;
+  margin-top: 30px;
+}
+
+p {
+  padding: 0 45px;
+  text-indent: 15px;
+  text-align: justify;
+}
+
+figure {
+  background-color: #dfdfdf;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 15px;
+  margin: 30px;
+}
+
+figure img {
+  width: 100%;
+}
+
+figcaption {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.matriz-musicdot {
+  margin-right: auto;
+  margin-left: auto;
+  width: 550px;
+}
+
+.familia-tupfeln {
+  float: right;
+  margin: 0 30px;
+  width: 275px;
+}
+
+footer {
+  margin: 30px 0;
+  padding: 30px 0;
+}
+
+footer img {
+  width: 94px;
+}
+
+footer p {
+  display: inline;
+}
+
+/* Colocamos p no footer e como ele é block precisamos ensinar o inline */
