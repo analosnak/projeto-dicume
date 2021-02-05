@@ -76,13 +76,13 @@ color: inherit;
   background-size: cover;
   padding-top: 9.5rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
 .cursos-chamada {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
