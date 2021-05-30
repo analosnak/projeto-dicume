@@ -5,3 +5,60 @@
 #svg-map a:hover path{ fill:#003399 !important }
 #svg-map .circle { fill:#66ccff }
 #svg-map a:hover .circle { fill:#003399 !important; cursor:pointer }
+
+main{
+    background-image: url(../img/image1.jpg)
+}
+
+.mapa{
+    width:650px;
+    height:650px; 
+}
+
+@media(max-width:1250px) {
+    .mapa{
+        width:600px;
+        height:600px; 
+    }
+}
+
+@media(max-width:1024px) {
+    .mapa{
+        width:500px;
+        height:500px; 
+    }
+}
+
+@media(max-width:900px) {
+    .mapa{
+        width:400px;
+        height:400px; 
+    }
+}
+
+@media(max-width:768px) {
+
+    .cursos {
+        color: #fff;
+        text-align: center;
+        background-size: cover;
+        padding-top: 9.5rem;
+        display: block;
+        flex-direction: row;
+        align-items: center;
+      }
+    
+      .cursos-chamada {
+        display: block;
+        align-items: center;
+      }
+
+}
+
+@media(max-width:500px) {
+    .mapa{
+        width:350px;
+        height:350px; 
+    }
+
+}

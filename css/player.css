@@ -5,8 +5,8 @@
     position: absolute;
     height: 100pt;
     width: 250pt;
-    top: 457px;
-    right: 25px;
+    top: 50%;
+    left: 10%;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -15,6 +15,23 @@
     box-shadow: 0 0 10px #000000;
     background: -webkit-linear-gradient(45deg, rgb(40, 40, 40), rgb(133, 133, 133));
     visibility: hidden;
+}
+
+
+
+
+@media (max-width: 1215px){
+    .container {
+        left: 5%;
+    }
+}
+
+@media (max-width: 768px){
+    .container {
+        position:relative;
+        margin: auto;
+        left: auto;
+    }
 }
 
 /* container for play, pause, previous track, next track, and progress bar  */
