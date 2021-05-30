@@ -2,51 +2,39 @@
 
 /* container for music player */
 .container {
-    position: relative;
-    height: 300pt;
+    position: absolute;
+    height: 100pt;
     width: 250pt;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 457px;
+    right: 25px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #000000;
     border-radius: 10px;
     box-shadow: 0 0 10px #000000;
+    background: -webkit-linear-gradient(45deg, rgb(40, 40, 40), rgb(133, 133, 133));
+    visibility: hidden;
 }
 
 /* container for play, pause, previous track, next track, and progress bar  */
-.box {
+/* .box {
     position: absolute;
     height: 50%;
     width: 103%;
     background: -webkit-linear-gradient(45deg, rgb(40, 40, 40), rgb(133, 133, 133));
-    z-index: 4;
     bottom: -17%;
-}
-
-/* album cover */
-#thumbnail {
-    position: absolute;
-    width: 103%;
-    top: -7%;
-    transition: 1s;
-    z-index: 3;
-}
+} */
 
 /* track artist */
 .song-artist {
     position: absolute;
-    z-index: 4;
+    /* z-index: 4; */
     color: rgb(193, 255, 6);
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 20px;
-    bottom: 21%;
+    bottom: 55%;
     left: 28%;
 }
 
@@ -57,7 +45,7 @@
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
-    bottom: 16%;
+    bottom: 37%;
     left: 28%;
 }
 
@@ -68,7 +56,7 @@
     width: 50px;
     filter: invert(1);
     cursor: pointer;
-    bottom: 15%;
+    bottom: 40%;
     z-index: 4;
     font-size: 53px;
     left: 9%;
@@ -81,7 +69,7 @@
     width: 30px;
     filter: invert(1);
     cursor: pointer;
-    bottom: 13.5%;
+    bottom: 25.5%;
     font-size: 40px;
     z-index: 4;
 }
@@ -94,7 +82,7 @@
 /* unique style for previous song image */
 #previous-song {
     right: 10.3%;
-    bottom: 21.5%;
+    bottom: 53%;
 }
 
 /* style for current time of the track */
@@ -118,7 +106,7 @@
     height: 50px;
     width: 50px;
     cursor: pointer;
-    bottom: -1%;
+    bottom: -7.5%;
     right: 11%;
     z-index: 4;
     font-family: 'Montserrat', sans-serif;
