@@ -85,6 +85,10 @@ main {
   font-size: 0.8rem;
 }
 
+.chamada a {
+  color: blue;
+}
+
 .video-desktop {
   padding-bottom: 0.7rem;
   width: 30rem;
