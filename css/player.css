@@ -38,11 +38,12 @@
     /* track artist */
     .song-artist {
         position: absolute;
-        /* z-index: 4; */
+        z-index: 4;
         color: rgb(193, 255, 6);
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         font-size: 20px;
+        width: 110px;
         bottom: 55%;
         left: 28%;
     }
