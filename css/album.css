@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #2e4255;
+  font-size: .7rem;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+/* Atributos */
+
+.largura-maxima {
+  width: 100%;
+}
+
+.largura-grande {
+  width: 80%;
+}
+
+/* Header */
+
+.header {
+  font-size: .7rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+}
+
+/* Conteúdo */
+
+main {
+  color: rgb(249, 250, 220);
+  text-align: center;
+  background-image: url(../img/laranja.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -28rem;
+  padding-top: 9.5rem;
+  padding-bottom: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cursos-chamada {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.chamada-titulo {
+  color: #e93d50;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: .3rem;
+}
+
+.chamada-titulo--destaque {
+  color: #fff;
+}
+
+.chamada p {
+  font-weight: 500;
+  line-height: 1;
+  margin: 0.5rem 0;
+}
+
+/* Footer */
+
+.sobre-logo {
+  width: 10rem;
+}
+
+.sobre-contato {
+  font-size: .8rem;
+}
+
+.sobre-midia a {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 9px;
+}
+
+.footer-titulo {
+  font-size: .9rem;
+} 
+
+.footer {
+  text-align: center;
+  border-top: 1px solid #e93d50;
+  padding: 20px 0 30px;
+  grid-template-columns: 80%;
+  justify-content: center;
+}
+
+.footer::before {
+  content: "";
+  width: 81%;
+  height: .13rem;
+  background-color: #e93d50;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+.sobre-logo {
+  width: 8rem;
+  margin-bottom: 1rem;
+}
+
+.sobre-contato {
+    font-weight: 500;
+    line-height: 15px;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.sobre-midia {
+display: flex;
+justify-content: center;
+margin-bottom: 1rem;
+}
+
+.sobre-midia a {
+  display: inline-block;
+  text-indent: -9999px;
+  width: 2rem;
+  height: 2rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.sobre-midia a[href*="facebook.com"] {
+  background-image: url(../img/footer-icone-facebook.svg);
+}
+
+.sobre-midia a[href*="youtube.com"] {
+  background-image: url(../img/footer-icone-youtube.svg);
+}
+
+.sobre-midia a[href*="instagram.com"] {
+  background-image: url(../img/footer-icone-instagram.svg);
+}
+
+.footer-titulo {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: .6rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-bottom: 15px;
+}
+
+.footer-lista {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.footer-lista li {
+  margin-bottom: 10px;
+}
+
+/* Media para tablet */
+
+@media(min-width:768px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .header {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 5%;
+    box-sizing: border-box;
+  }
+
+  .header-navegacao {
+    background-color: unset;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+
+  .header-navegacao li {
+    margin-left: 2rem;
+    font-weight: 500;
+  }
+
+  /* Chamada cursos */
+
+  main {
+    padding: 10rem 5% 0;
+  }
+
+  .cursos-chamada {
+    width: 300px;
+    align-items: flex-start;
+    align-self: flex-start;
+    text-align: left;
+  }
+
+  .chamada-titulo {
+    font-size: 2rem;
+  }
+
+  .chamada-cursos-matricula {
+    display: none;
+  }
+
+  .cursos-lista {
+    grid-template-columns: repeat(5, 7rem);
+    grid-template-rows: 5.5rem 5.5rem 5.5rem;
+    gap: .8rem;
+  }
+
+  .cursos-lista li {
+    background-repeat: no-repeat;
+    background-size: 2rem 2rem;
+    background-position: top 1rem center;
+    padding-top: 2.5rem;
+  }
+
+  .cursos-lista {
+    order: -1;
+    grid-area: 1/1/span 3/3;
+    padding-top: 5.5rem;
+    background-size: 6rem 6rem;
+    background-position: top 3.6rem center;
+  } 
+
+
+  /* Chamada Video */
+
+  .video-mobile {
+    display: none;
+  }
+
+  .video-desktop {
+    display: block;
+    width: 100%;
+    height: 12.8rem;
+  }
+
+  .textos-titulo {
+    font-size: 1.5rem;
+  }
+
+  /* Chamada YouTube */
+  /* .chamada-youtube {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "chamada chamada"
+    "video1 video2";
+  }
+
+  .youtube-informacao {
+    padding: 2rem 17%;
+    box-sizing: border-box;
+    grid-area: chamada;
+  }
+
+  .--icone-youtube::before {
+    width: 5rem;
+    height: 5rem;
+  }
+  .chamada-youtube-video1 {
+    grid-area: video1;
+  }
+
+  .chamada-youtube-video2 {
+    grid-area: video2;
+  }
+
+  .canal-titulo {
+    font-size: 1.5rem;
+  }
+
+  .descricao-texto {
+    font-size: .8rem;
+  } */
+
+  /* Footer */
+
+  .footer {
+    padding: 2rem 5%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "cursos materiais"
+    "sobre novidades";
+    gap: 1rem;
+  }
+
+  .footer-lista {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .footer-sobre {
+    grid-area: sobre;
+  }
+
+  .footer-cursos {
+    grid-area: cursos;
+    display: grid;
+    grid-template-rows: 2rem 1fr;
+    justify-content: center;
+  }
+} 
+
+@media(min-width:1200px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  /* Header */
+
+  .header {
+    padding: 0 10%;
+  }
+
+  .header-logo {
+    width: 10.5rem;
+  }
+
+  .header-navegacao {
+    font-weight: 700;
+    letter-spacing: 2.6px;
+    padding: 1.3rem 0;
+    display: flex;
+    background-color: unset;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+
+  .header-navegacao a {
+    color: #fff;
+  }
+
+  .header-navegacao li {
+    margin-left: 2rem;
+    font-weight: 500;
+  }
+
+
+  /* Cursos */
+
+  .cursos {
+    padding: 7rem 10% 0;
+  }
+
+  .cursos-chamada {
+    width: 450px;
+  }
+
+  .chamada-titulo {
+    font-size: 2.5rem;
+  }
+
+  .chamada p {
+    padding: 0.7rem;
+    line-height: 1.8rem;
+  }
+
+  /* Chamada Video */
+
+  .video-desktop {
+    padding-top: 1rem;
+    height: 25.8rem;
+    width: 50rem;
+    padding-bottom: 3rem;
+  }
+
+  .video-textos {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .video-textos::before {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .textos-titulo {
+    font-size: 1.9rem;
+  }
+
+  /* Chamada Planos */
+/* 
+  .planos-titulo {
+    font-size: 1.2rem;
+  }
+
+  .plano--destaque {
+    font-size: .9rem;
+    width: 10rem;
+    transform: translate(-50%, -75%);
+  } */
+
+  /* Chamada YouTube */
+/* 
+  .youtube-informacao {
+    padding: 4rem 20%;
+  }
+
+  .icone-youtube::before {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .canal-titulo {
+    font-size: 2rem;
+    margin-bottom: .4rem;
+  }
+
+  .canal-texto {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .video-descricao {
+    width: 75%;
+    text-align: left;
+  }
+
+  .descricao-titulo {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .descricao-texto {
+    font-size: .9rem;
+  } */
+
+  /* Footer */
+
+  .footer {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "sobre cursos materiais novidades";
+    text-align: left;
+    padding: 2rem 10%;
+  }
+
+  .footer-lista a {
+    font-size: .8rem;
+  }
+
+  .footer-cursos {
+    grid-template-rows: 1.5rem 1fr;
+  }
+
+  .footer-titulo {
+    font-size: .8rem;
+  }
+
+  .sobre-contato {
+    font-size: .6rem;
+  }
+}
+
+@media(min-width:1440px) {
+  .cursos-lista {
+    grid-template-columns: repeat(6, 11rem);
+  }
+} */
+
+/* @media(min-width:1600px) { */
+  /* Chamada Cursos */
+/* 
+  .cursos-lista {
+    grid-template-columns: repeat(6, 13rem);
+  }
+
+  .cursos-lista img {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 10px;
+  } */
+
+  /* Chamada Video */
+
+  .video-desktop {
+    height: 26.8rem;
+  }
+
+  /* Footer */
+
+  .sobre-logo {
+    width: 10rem;
+  }
+
+  .sobre-contato {
+    font-size: 1.8rem;
+  }
+
+  .sobre-midia a {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 9px;
+  }
+
+  .footer-titulo {
+    font-size: .9rem;
+  }    

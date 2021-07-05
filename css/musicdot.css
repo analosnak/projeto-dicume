@@ -21,23 +21,6 @@ color: inherit;
   width: 80%;
 }
 
-.botao {
-  font-size: .8rem;
-  font-weight: 500;
-  letter-spacing: 2.9px;
-  text-transform: uppercase;
-  padding: 1rem 40px;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  border-radius: 6px;
-  transition: .25s;
-}
-
-.botao:hover {
-  transform: translate(0, .22rem);
-  transition: .25s;
-}
-
 /* Header */
 
 .header {
@@ -47,11 +30,6 @@ color: inherit;
   flex-direction: column;
   position: absolute;
   top: 0;
-}
-
-.header-logo {
-  width: 8.5rem;
-  padding: 1.5rem 0;
 }
 
 .header-navegacao {
@@ -68,16 +46,6 @@ color: inherit;
 }
 
 /* Chamada Cursos */
-
-.cursos {
-  color: #fff;
-  text-align: center;
-  background-size: cover;
-  padding-top: 9.5rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 
 .cursos-chamada {
   display: flex;
@@ -102,9 +70,8 @@ color: inherit;
   margin: 1rem 0;
 }
 
-.chamada-cursos-matricula {
-  color: #fff;
-  background-color: #e93d50;
+.chamada a {
+  color: #4286f4;
 }
 
 .cursos-lista {
@@ -145,20 +112,12 @@ color: inherit;
   margin-bottom: 5px;
 }
 
-
-
-
-
-
 /* Footer */
 
 .footer {
   text-align: center;
   border-top: 1px solid #e93d50;
   padding: 20px 0 30px;
-  position: relative;
-  display: grid;
-  grid-template-columns: 80%;
   justify-content: center;
 }
 
@@ -173,16 +132,12 @@ color: inherit;
   transform: translate(-50%, -50%);
 }
 
-.sobre-logo {
-  width: 8rem;
-  margin-bottom: 1rem;
-}
-
 .sobre-contato {
   font-weight: 500;
   line-height: 15px;
   margin-bottom: 1rem;
   font-size: 3rem;
+  text-align: center;
 }
 
 .sobre-midia {
@@ -231,30 +186,6 @@ color: inherit;
   margin-bottom: 10px;
 }
 
-.novidades-form {
-  background-color: #e93d50;
-  width: 100%;
-  border: 2px solid #e93d50;
-  border-radius: 7px;
-  overflow: hidden;
-  box-sizing: border-box;
-  display: flex;
-}
-
-.novidades-email {
-  padding: .6rem .4rem;
-  border: none;
-  flex-grow: 1;
-}
-
-.novidades-submit {
-  color: #fff;
-  font-weight: 600;
-  text-transform: uppercase;
-  background-color: #e93d50;
-  border: none;
-  flex-grow: 1;
-}
 
 /* Media para tablet */
 
@@ -281,40 +212,22 @@ color: inherit;
     font-weight: 500;
   }
 
-  .header-matricula {
-    color: #fff;
-    background-color: #e93d50;
-    padding: 1rem 2rem;
-    display: block;
-    border-radius: 6px;
-    transition: .25s;
-  }
-
-  .header-matricula:hover {
-    background-color: rgb(240, 48, 70);
-    transform: translate(0, .22rem);
-    transition: .25s;
-  }
 
   /* Chamada cursos */
 
   .cursos {
-    padding: 10rem 5% 0;
+    padding: 5rem 5% 0;
   }
 
   .cursos-chamada {
     width: 300px;
-    align-items: flex-start;
-    align-self: flex-start;
-    text-align: left;
+    align-items: flex-end;
+    align-self: flex-end;
+    text-align: right;
   }
 
   .chamada-titulo {
     font-size: 2rem;
-  }
-
-  .chamada-cursos-matricula {
-    display: none;
   }
 
   .cursos-lista {
@@ -355,8 +268,6 @@ color: inherit;
     font-size: 1.5rem;
   }
 
-  /* Cards */
-
 
   /* Footer */
 
@@ -383,21 +294,9 @@ color: inherit;
 
   .footer-cursos {
     grid-area: cursos;
-  }
-
-  .footer-materiais {
-    grid-area: materiais;
-  }
-
-  .footer-materiais, .footer-cursos {
     display: grid;
     grid-template-rows: 2rem 1fr;
     justify-content: center;
-  }
-
-  .footer-novidades {
-    grid-area: novidades;
-    padding: 1rem;
   }
 }
 
@@ -410,10 +309,6 @@ color: inherit;
 
   .header {
     padding: 0 10%;
-  }
-
-  .header-logo {
-    width: 10.5rem;
   }
 
   /* Cursos */
@@ -444,7 +339,7 @@ color: inherit;
     padding-top: 2.5rem;
   }
 
-  .cursos-lista .curso--destaque {
+  .cursos-lista {
     order: -1;
     grid-area: 1/1/span 2/2;
     padding-top: 6rem;
@@ -452,7 +347,7 @@ color: inherit;
     background-position: top 3.6rem center;
   }
 
-  .cursos-lista .curso--destaque2 {
+  .cursos-lista {
     order: -1;
     grid-area: 1/4/span 2/5;
     padding-top: 6rem;
@@ -464,12 +359,6 @@ color: inherit;
     font-size: .9rem;
   }
 
-
-  .curso--destaque2 .imagem-destaque2 {
-    width: 6rem;
-    height: 6rem;
-    margin-bottom: .8rem;
-  }
 
   /* Chamada Video */
 
@@ -489,44 +378,6 @@ color: inherit;
 
   .textos-titulo {
     font-size: 1.9rem;
-  }
-
-  /* Chamada Planos */
-
-  .planos-titulo {
-    font-size: 1.2rem;
-  }
-
-  .plano--destaque {
-    font-size: .9rem;
-    width: 10rem;
-    transform: translate(-50%, -75%);
-  }
-
-  /* Beneficios */
-
-  .beneficios-titulo {
-    font-size: 1.3rem;
-  }
-
-  .beneficios-lista {
-    gap: 1.3rem;
-    grid-template-columns: 22.5rem 22.5rem;
-  }
-
-  .beneficios-lista li {
-    padding-top: 7.25rem;
-    background-size: 6rem 6rem;
-  }
-
-  .beneficio-titulo {
-    font-size: 1.2rem;
-    margin-bottom: .6rem;
-  }
-
-  .beneficio-texto {
-    font-size: .9rem;
-    line-height: 1.2rem;
   }
 
   /* Chamada YouTube */
@@ -565,31 +416,6 @@ color: inherit;
     font-size: .9rem;
   }
 
-  /* Chamada Aplicativo */
-
-  .chamada-aplicativo {
-    grid-template-columns: 1fr 12rem 12rem;
-  }
-
-  .aplicativo-titulo {
-    font-size: 1.8rem;
-  }
-
-  .aplicativo-button {
-    width: 9.5rem;
-    font-size: .8rem;
-    background-size: 1.8rem;
-    padding: 1.5rem 0 1.5rem 1rem;
-  }
-
-  .app-download--android {
-    background-position: left .7rem top .8rem;
-    padding-left: 1.4rem;
-  }
-
-  .app-download--ios {
-    background-position: left 1.3rem top .6rem;
-  }
 
   /* Footer */
 
@@ -604,7 +430,7 @@ color: inherit;
     font-size: .8rem;
   }
 
-  .footer-materiais, .footer-cursos {
+  .footer-cursos {
     grid-template-rows: 1.5rem 1fr;
   }
 
@@ -612,20 +438,8 @@ color: inherit;
     font-size: .8rem;
   }
 
-  .sobre-midia {
-    justify-content: flex-start;
-  }
-
   .sobre-contato {
-    font-size: .6rem;
-  }
-
-  .materiais-lista {
-    justify-content: flex-start;
-  }
-
-  .footer-novidades {
-    padding: 0;
+    font-size: 1.8rem;
   }
 }
 
@@ -661,7 +475,7 @@ color: inherit;
   }
 
   .sobre-contato {
-    font-size: .8rem;
+    font-size: 1.8rem;
   }
 
   .sobre-midia a {

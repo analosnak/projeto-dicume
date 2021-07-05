@@ -7,12 +7,16 @@
 #svg-map a:hover .circle { fill:#003399 !important; cursor:pointer }
 
 main{
+    color: #fff;
     background-image: url(../img/image1.jpg)
 }
 
 .mapa{
+    padding-top: 1rem;
+    padding-bottom: 3rem;
     width:650px;
     height:650px; 
+    margin-left: 25rem;
 }
 
 @media(max-width:1250px) {
@@ -22,17 +26,23 @@ main{
     }
 }
 
-@media(max-width:1024px) {
+@media(max-width:1063px) {
     .mapa{
         width:500px;
         height:500px; 
     }
+
+    main {
+        background-position: -15rem;
+        background-repeat: no-repeat;
+    }
 }
 
-@media(max-width:900px) {
+@media(max-width:960px) {
     .mapa{
         width:400px;
         height:400px; 
+        margin-left: 15rem;
     }
 }
 
@@ -55,10 +65,34 @@ main{
 
 }
 
+@media(max-width:650px) {
+    .mapa{
+        margin-left: 13rem;
+    }
+}
+
+@media(max-width:620px) {
+    .mapa{
+        margin-left: 10rem;
+    }
+}
+
+@media(max-width:575px) {
+    .mapa{
+        margin-left: 8rem;
+    }
+}
+
+@media(max-width:535px) {
+    .mapa{
+        margin-left: 6rem;
+    }
+}
+
 @media(max-width:500px) {
     .mapa{
         width:350px;
-        height:350px; 
+        height:350px;
     }
 
 }

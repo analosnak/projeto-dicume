@@ -20,155 +20,339 @@
 
 
 
-@media (max-width: 1215px){
+@media (max-width: 1575px){
     .container {
         left: 5%;
+        top: 40rem;
+    }
+
+    /* container for play, pause, previous track, next track, and progress bar  */
+    /* .box {
+        position: absolute;
+        height: 50%;
+        width: 103%;
+        background: -webkit-linear-gradient(45deg, rgb(40, 40, 40), rgb(133, 133, 133));
+        bottom: -17%;
+    } */
+
+    /* track artist */
+    .song-artist {
+        position: absolute;
+        /* z-index: 4; */
+        color: rgb(193, 255, 6);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        bottom: 55%;
+        left: 28%;
+    }
+
+    /* track title */
+    .song-title {
+        position: absolute;
+        z-index: 4;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 17px;
+        bottom: 37%;
+        left: 28%;
+    }
+
+    /* style for play and pause images */
+    #play-pause {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        filter: invert(1);
+        cursor: pointer;
+        bottom: 40%;
+        z-index: 4;
+        font-size: 53px;
+        left: 9%;
+    }
+
+    /* style for next and previous song images */
+    #next-song, #previous-song {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        filter: invert(1);
+        cursor: pointer;
+        bottom: 25.5%;
+        font-size: 40px;
+        z-index: 4;
+    }
+
+    /* unique style for next song image */
+    #next-song {
+        right: 6.7%;
+    }
+
+    /* unique style for previous song image */
+    #previous-song {
+        right: 6.5%;
+        bottom: 53%;
+    }
+
+    /* style for current time of the track */
+    .currentTime {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        bottom: -7.5%;
+        left: 17%;
+        z-index: 4;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        color: white;
+        align-items: center;
+    }
+
+    /* style for the total length of the track */
+    .durationTime {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        bottom: -7.5%;
+        right: 11%;
+        z-index: 4;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        align-items: center;
+        color: rgb(193, 255, 6);
+    }
+
+    /* style for the progress bar */
+    #progress-bar {
+        -webkit-appearance: none;
+        appearance: none;
+        position: absolute;
+        z-index: 4;
+        height: 5px;
+        background: #000000;
+        width: 160pt;
+        bottom: 5%;
+        border-radius: 30px;
+        left: 17%;
+    }
+
+    /* style for the progress bar's slider thumb */
+    #progress-bar::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        margin-top: -3px;
+        margin-left: 0px;
+        height: 10px;
+        width: 7px;
+        border: 0;
+        background: -webkit-linear-gradient(45deg,  rgb(213, 213, 213), rgb(193, 255, 6));
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    /* style for the progress bar's runnable track */
+    #progress-bar::-webkit-slider-runnable-track {
+        -webkit-appearance: none;
+        appearance: none;
+        cursor: pointer;
+        max-height: 5px;
+        border-radius: 30px;
+    }
+
+    /* style to remove blue shade of the progress bar when clicked on/selected */
+    #progress-bar:focus {
+        outline: none;
     }
 }
 
 @media (max-width: 768px){
     .container {
-        position:relative;
-        margin: auto;
-        left: auto;
+        top: 35rem;
+        height: 80pt;
+        width: 200pt;
     }
+    
+    /* track artist */
+    .song-artist {
+        font-size: 130%;
+        bottom: 55%;
+        left: 30%;
+    }
+
+    /* track title */
+    .song-title {
+        bottom: 37%;
+        left: 30%;
+    }
+
+    /* style for play and pause images */
+    #play-pause {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        bottom: 40%;
+        z-index: 4;
+        left: 9%;
+    }
+
+    /* style for next and previous song images */
+    #next-song, #previous-song {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        bottom: 25.5%;
+        font-size: 40px;
+        z-index: 4;
+    }
+
+    /* unique style for next song image */
+    #next-song {
+        right: 6.7%;
+    }
+
+    /* unique style for previous song image */
+    #previous-song {
+        right: 6.5%;
+        bottom: 53%;
+    }
+  
 }
 
-/* container for play, pause, previous track, next track, and progress bar  */
-/* .box {
-    position: absolute;
-    height: 50%;
-    width: 103%;
-    background: -webkit-linear-gradient(45deg, rgb(40, 40, 40), rgb(133, 133, 133));
-    bottom: -17%;
-} */
+@media (max-width: 575px){
+    .container {
+        top: 38rem;
+        height: 70pt;
+        width: 180pt;
+    }
+    
+    /* track artist */
+    .song-artist {
+        position: absolute;
+        /* z-index: 4; */
+        color: rgb(193, 255, 6);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 120%;
+        bottom: 60%;
+        left: 30%;
+    }
 
-/* track artist */
-.song-artist {
-    position: absolute;
-    /* z-index: 4; */
-    color: rgb(193, 255, 6);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    bottom: 55%;
-    left: 28%;
-}
+    /* track title */
+    .song-title {
+        position: absolute;
+        z-index: 4;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        bottom: 37%;
+        left: 30%;
+    }
 
-/* track title */
-.song-title {
-    position: absolute;
-    z-index: 4;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
-    bottom: 37%;
-    left: 28%;
-}
+    /* style for play and pause images */
+    #play-pause {
+        position: absolute;
+        height: 45px;
+        width: 45px;
+        filter: invert(1);
+        cursor: pointer;
+        bottom: 40%;
+        z-index: 4;
+        font-size: 53px;
+        left: 9%;
+    }
 
-/* style for play and pause images */
-#play-pause {
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    filter: invert(1);
-    cursor: pointer;
-    bottom: 40%;
-    z-index: 4;
-    font-size: 53px;
-    left: 9%;
-}
+    /* style for next and previous song images */
+    #next-song, #previous-song {
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        filter: invert(1);
+        cursor: pointer;
+        bottom: 35.5%;
+        font-size: 30px;
+        z-index: 2;
+    }
 
-/* style for next and previous song images */
-#next-song, #previous-song {
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    filter: invert(1);
-    cursor: pointer;
-    bottom: 25.5%;
-    font-size: 40px;
-    z-index: 4;
-}
+    /* unique style for next song image */
+    #next-song {
+        right: 5.5%;
+    }
 
-/* unique style for next song image */
-#next-song {
-    right: 10%;
-}
+    /* unique style for previous song image */
+    #previous-song {
+        right: 5.5%;
+        bottom: 63%;
+    }
 
-/* unique style for previous song image */
-#previous-song {
-    right: 10.3%;
-    bottom: 53%;
-}
+    /* style for current time of the track */
+    .currentTime {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        bottom: -17.5%;
+        left: 10%;
+        z-index: 4;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        color: white;
+        align-items: center;
+    }
 
-/* style for current time of the track */
-.currentTime {
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    bottom: -7.5%;
-    left: 17%;
-    z-index: 4;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-    color: white;
-    align-items: center;
-}
+    /* style for the total length of the track */
+    .durationTime {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        bottom: -17.5%;
+        right: 0%;
+        z-index: 4;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        align-items: center;
+        color: rgb(193, 255, 6);
+    }
 
-/* style for the total length of the track */
-.durationTime {
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    bottom: -7.5%;
-    right: 11%;
-    z-index: 4;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
-    align-items: center;
-    color: rgb(193, 255, 6);
-}
+    /* style for the progress bar */
+    #progress-bar {
+        -webkit-appearance: none;
+        appearance: none;
+        position: absolute;
+        z-index: 4;
+        height: 5px;
+        background: #000000;
+        width: 130pt;
+        bottom: 5%;
+        border-radius: 30px;
+        left: 13%;
+    }
 
-/* style for the progress bar */
-#progress-bar {
-    -webkit-appearance: none;
-    appearance: none;
-    position: absolute;
-    z-index: 4;
-    height: 5px;
-    background: #000000;
-    width: 160pt;
-    bottom: 5%;
-    border-radius: 30px;
-    left: 17%;
-}
+    /* style for the progress bar's slider thumb */
+    #progress-bar::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        margin-top: -3px;
+        margin-left: 0px;
+        height: 10px;
+        width: 7px;
+        border: 0;
+        background: -webkit-linear-gradient(45deg,  rgb(213, 213, 213), rgb(193, 255, 6));
+        border-radius: 30px;
+        cursor: pointer;
+    }
 
-/* style for the progress bar's slider thumb */
-#progress-bar::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    margin-top: -3px;
-    margin-left: 0px;
-    height: 10px;
-    width: 7px;
-    border: 0;
-    background: -webkit-linear-gradient(45deg,  rgb(213, 213, 213), rgb(193, 255, 6));
-    border-radius: 30px;
-    cursor: pointer;
-}
+    /* style for the progress bar's runnable track */
+    #progress-bar::-webkit-slider-runnable-track {
+        -webkit-appearance: none;
+        appearance: none;
+        cursor: pointer;
+        max-height: 5px;
+        border-radius: 30px;
+    }
 
-/* style for the progress bar's runnable track */
-#progress-bar::-webkit-slider-runnable-track {
-    -webkit-appearance: none;
-    appearance: none;
-    cursor: pointer;
-    max-height: 5px;
-    border-radius: 30px;
-}
-
-/* style to remove blue shade of the progress bar when clicked on/selected */
-#progress-bar:focus {
-    outline: none;
+    /* style to remove blue shade of the progress bar when clicked on/selected */
+    #progress-bar:focus {
+        outline: none;
+    }    
 }
