@@ -85,6 +85,12 @@ main {
   font-size: 0.8rem;
 }
 
+.video-desktop {
+    padding-bottom: 0.7rem;
+    width: 30rem;
+    height: 15rem;
+  }
+
 /* Footer */
 
 .sobre-logo {
@@ -188,7 +194,7 @@ margin-bottom: 1rem;
   body {
     font-size: 1rem;
   }
-
+/*
   .header {
     flex-direction: row;
     align-items: center;
@@ -206,7 +212,7 @@ margin-bottom: 1rem;
     margin-left: 2rem;
     font-weight: 500;
   }
-
+*/
   /* Chamada cursos */
 
   main {
@@ -255,7 +261,7 @@ margin-bottom: 1rem;
   .video-mobile {
     display: none;
   }
-
+/*
   .video-desktop {
     display: block;
     width: 100%;
@@ -265,7 +271,7 @@ margin-bottom: 1rem;
   .textos-titulo {
     font-size: 1.5rem;
   }
-
+*/
   /* Chamada YouTube */
   /* .chamada-youtube {
     grid-template-columns: 1fr 1fr;

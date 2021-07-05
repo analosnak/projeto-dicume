@@ -91,24 +91,6 @@ main {
 
 /* Footer */
 
-.sobre-logo {
-  width: 10rem;
-}
-
-.sobre-contato {
-  font-size: .8rem;
-}
-
-.sobre-midia a {
-  width: 2.5rem;
-  height: 2.5rem;
-  margin-right: 9px;
-}
-
-.footer-titulo {
-  font-size: .9rem;
-} 
-
 .footer {
   text-align: center;
   border-top: 1px solid #e93d50;
@@ -190,9 +172,9 @@ main {
 
 @media(min-width:768px) {
   body {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
-
+/*
   .header {
     flex-direction: row;
     align-items: center;
@@ -209,7 +191,7 @@ main {
   .header-navegacao li {
     margin-left: 2rem;
     font-weight: 500;
-  }
+  }*/
 
   /* Chamada cursos */
 
@@ -259,7 +241,7 @@ main {
   .video-mobile {
     display: none;
   }
-
+/*
   .video-desktop {
     display: block;
     width: 100%;
@@ -268,7 +250,7 @@ main {
 
   .textos-titulo {
     font-size: 1.5rem;
-  }
+  }*/
 
   /* Chamada YouTube */
   /* .chamada-youtube {
